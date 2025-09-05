@@ -8,4 +8,4 @@ Welcome to this repo! This contains my code as I work through the OSTEP (Operati
 
 # Useful Links
 - [The book](https://pages.cs.wisc.edu/~remzi/OSTEP/) (Its free and online, so highly recommend it, and do buy a copy to support the authors if you appreicate them, I've been thorougly enjoying the book so far).
-- [Projects] (https://github.com/remzi-arpacidusseau/ostep-projects?tab=readme-ov-file) - The repo for the ostep-projects
+- [Projects](https://github.com/remzi-arpacidusseau/ostep-projects?tab=readme-ov-file) - The repo for the ostep-projects
