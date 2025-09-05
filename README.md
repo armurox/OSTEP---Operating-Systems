@@ -9,4 +9,4 @@ Welcome to this repo! This contains my code as I work through the OSTEP (Operati
 
 
 # Useful Links
-- https://pages.cs.wisc.edu/~remzi/OSTEP/ (The book itself, its free and online, so highly recommend it, and do buy a copy to support the authors if you appreicate them, I've been thorougly enjoying the book so far).
+- [The book](https://pages.cs.wisc.edu/~remzi/OSTEP/) (Its free and online, so highly recommend it, and do buy a copy to support the authors if you appreicate them, I've been thorougly enjoying the book so far).
