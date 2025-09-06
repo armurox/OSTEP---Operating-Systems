@@ -31,6 +31,7 @@ void print_zipped_file(const char *filename)
     int curr_size;
     
     // Read line by line into a memory buffer, then output to stdin the encoded version
+    // TODO: Update wgetline to return -2 for newline, -1 for end of file
     while ((curr_size = wgetline(f, &line, &size)) != -1)
         print_zipped_line(line, curr_size);
 
