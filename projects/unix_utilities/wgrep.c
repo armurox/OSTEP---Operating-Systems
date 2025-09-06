@@ -27,7 +27,7 @@ int main(int argc, char **argv)
     // Note: exit if not able to open any particular file
     for (int i = 2; i < argc; i++)
     {
-        if (!print_found_lines(argv[1], argv[2]))
+        if (!print_found_lines(argv[1], argv[i]))
         {
             printf("wgrep: cannot open file\n");
             exit(1);

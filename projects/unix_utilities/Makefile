@@ -12,7 +12,7 @@ wcat: wcat.o io.o
 wgrep: wgrep.o find.o
 	$(CC) $^ -o $@
 
-wzip: wzip.o
+wzip: wzip.o zip_file.o find.o
 	$(CC) $^ -o $@
 
 

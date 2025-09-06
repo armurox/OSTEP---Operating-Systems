@@ -3,11 +3,9 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define DEFAULT_LINE_LENGTH 1000
-
 /* Read a line into a buffer, reallocating to increase the size of the buffer as needed
 parameters:
-1. sequence - The actual string that we are reading from
+1. f - The actual file pointer that we are reading from
 2. buffer - The character buffer which we are reading into, will increase as needed
 3. buffer_size - The size of the buffer, will increase as needed
 
@@ -36,7 +34,7 @@ int wgetline(FILE *f, char **buffer, int *buffer_size)
             *buffer = temp;
         }
 
-        // TODO: Actually read into the line and increment curr_index
+        // Actually read into the line and increment curr_index
         (*buffer)[curr_index++] = c;
     }
 
@@ -58,7 +56,7 @@ int wgetline(FILE *f, char **buffer, int *buffer_size)
 
     (*buffer)[curr_index] = '\0';
 
-    return (c == EOF) ? -1 : curr_index;
+    return (c == EOF && curr_index == 0) ? -1 : curr_index;
 }
 
 
