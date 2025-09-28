@@ -16,7 +16,6 @@ int main(int argc, char **argv)
         exit(1);
     }
 
-    // TODO: Update to read in all files in one short, with argc as an argument. It will allow compressing multiple files into one.
-    for (int i = 1; i < argc; i++)
-        print_zipped_file(argv[i]);
+    // TODO: Update to read in all files in one shot, with argc as an argument. It will allow compressing multiple files into one.
+    print_zipped_files(argv, argc);
 }
