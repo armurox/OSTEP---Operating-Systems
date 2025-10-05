@@ -16,6 +16,9 @@ mem: mem.o
 threads: threads.o
 	$(CC) $^ -o $@
 
+io: io.o
+	$(CC) $^ -o $@
+
 # Build object files
 %.o: %.c
 	$(CC) $(C_FLAGS) -c $^ 
@@ -26,3 +29,4 @@ clean:
 	rm -rf cpu
 	rm -rf mem
 	rm -rf threads
+	rm -rf io
