@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
     while (1)
     {
-        Spin(1);  // Wait 1 seconc
+        Spin(1);  // Wait 1 second
         printf("%s\n", argv[1]);
     }
 

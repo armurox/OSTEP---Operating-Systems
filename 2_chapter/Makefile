@@ -6,7 +6,14 @@ C_FLAGS := -Wall -Wextra -pedantic
 
 all: cpu io mem threads
 
+# Main programs in final executable
 cpu: cpu.o
+	$(CC) $^ -o $@
+
+mem: mem.o
+	$(CC) $^ -o $@
+
+threads: threads.o
 	$(CC) $^ -o $@
 
 # Build object files
@@ -16,4 +23,6 @@ cpu: cpu.o
 
 clean:
 	rm -rf *.o
-	rm -rf clean
+	rm -rf cpu
+	rm -rf mem
+	rm -rf threads
